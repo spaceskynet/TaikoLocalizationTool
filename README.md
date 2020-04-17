@@ -8,7 +8,7 @@ You can easily write down the translation in the `.xlsx` file and repack to `.da
 
 You can easily modify the game png image and repack to `.txp` file by this tool.
 
-All the settings can be modify in the `consts.py`.
+All the settings can be modified in the `consts.py`.
 
 ### Requirements:
 
