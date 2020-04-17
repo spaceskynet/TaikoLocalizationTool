@@ -34,7 +34,7 @@ class SysDatFile(object):
             self.contents[flag] = txt
         if len(self.contents.values()) != self.text_count:
             self.text_count = len(self.contents.values())
-            print("[Error]: Source file [ %s ] has the same flag! Please delete the other duplicate key! " % self.file_name)
+            print("[Error]: Source file [ %s ] has duplicate flags! Please delete the other duplicate key! " % self.file_name)
         #print(self.text_count, self.title ,self.contents)
         pass
     
@@ -91,7 +91,7 @@ class CharaDatFile(object):
             self.contents[flag]= {'txt':txt, 'feature_code':feature_code}
         if len(self.contents.values()) != self.text_count:
             self.text_count = len(self.contents.values())
-            print("[Error]: Source file [ %s ] has the same flag! Please delete the other duplicate key! " % self.file_name)
+            print("[Error]: Source file [ %s ] has duplicate flags! Please delete the other duplicate key! " % self.file_name)
         #print(self.text_count, self.title ,self.contents)
         pass
     
@@ -194,7 +194,7 @@ class StoryDatFile(object):
         #print(self.text_count, self.contents)
         if len(self.contents.values()) != self.text_count:
             self.text_count = len(self.contents.values())
-            print("Source file [ %s ] has the same flag! Please delete the other duplicate key! " % self.file_name)
+            print("[Error]: Source file [ %s ] has duplicate flags! Please delete the other duplicate key! " % self.file_name)
         pass
     
     def dat_write(self):
