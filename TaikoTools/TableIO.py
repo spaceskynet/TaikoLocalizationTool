@@ -36,9 +36,9 @@ class SysDatExcel(SysDatFile):
             super(SysDatExcel, self).__init__(os.path.join(sys_dat_file_dir, file))
             self.dat_read()
             ws = wb.create_sheet(self.title.decode(encoding = "utf-8"))
-            ws.cell(row = 1, column = 1).value = "标识"
-            ws.cell(row = 1, column = 2).value = "原文"
-            ws.cell(row = 1, column = 3).value = "译文"
+            ws.cell(row = 1, column = 1).value = "Flag"
+            ws.cell(row = 1, column = 2).value = "OriginText"
+            ws.cell(row = 1, column = 3).value = "Translation"
             for i, (flag, txt) in enumerate(self.contents.items()):
                 ws.cell(row = i + 2, column = 1).value = flag.decode(encoding = "utf-8")
                 ws.cell(row = i + 2, column = 2).value = txt.decode(encoding = "utf-8")
@@ -90,9 +90,9 @@ class CharaDatExcel(CharaDatFile):
             super(CharaDatExcel, self).__init__(os.path.join(chara_dat_file_dir, file))
             self.dat_read()
             ws = wb.create_sheet(file)
-            ws.cell(row = 1, column = 1).value = "标识"
-            ws.cell(row = 1, column = 2).value = "原文"
-            ws.cell(row = 1, column = 3).value = "译文"
+            ws.cell(row = 1, column = 1).value = "Flag"
+            ws.cell(row = 1, column = 2).value = "OriginText"
+            ws.cell(row = 1, column = 3).value = "Translation"
             for i, (flag, content) in enumerate(self.contents.items()):
                 ws.cell(row = i + 2, column = 1).value = flag.decode(encoding = "utf-8")
                 ws.cell(row = i + 2, column = 2).value = content['txt'].decode(encoding = "utf-8")
@@ -167,9 +167,9 @@ class StoryDatExcel(StoryDatFile):
             super(StoryDatExcel, self).__init__(os.path.join(story_dat_file_dir, file))
             self.dat_read()
             ws = wb.create_sheet(file)
-            ws.cell(row = 1, column = 1).value = "标识"
-            ws.cell(row = 1, column = 2).value = "原文"
-            ws.cell(row = 1, column = 3).value = "译文"
+            ws.cell(row = 1, column = 1).value = "Flag"
+            ws.cell(row = 1, column = 2).value = "OriginText"
+            ws.cell(row = 1, column = 3).value = "Translation"
             for i, (flag, content) in enumerate(self.contents.items()):
                 ws.cell(row = i + 2, column = 1).value = flag.decode(encoding = "utf-8")
                 #print(flag, content)

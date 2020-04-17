@@ -74,6 +74,8 @@ To pack or unpack at once.
 
 Some `.dat` files has **duplicate** flags, please replace them by the `.dat` files in`DatReplace` dir.
 
+The tool also has some other functions.
+
 > This tool is for everyone who want to translate ***Taiko no Tatsujin: Dokodon! Mystery Adventure***.
 
 
