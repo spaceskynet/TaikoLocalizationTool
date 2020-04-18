@@ -1,1 +1,10 @@
 *.pyc
+*.xlsx
+*.zip
+_data/
+sys_dat_output/
+story_dat_output/
+chara_dat_output/
+sys_img_output/
+story_img_output/
+output/
