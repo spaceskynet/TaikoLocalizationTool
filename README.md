@@ -65,10 +65,10 @@ Taiko.py img -a ACTION [-t TYPE]
 #### Packall/Unpackall:
 
 ```
-Taiko.py img (packall | unpackall)
+Taiko.py (packall | unpackall)
 ```
 
-To pack or unpack at once.
+To pack or unpack all at once.
 
 ### Attention:
 
